@@ -17,6 +17,14 @@ h1 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
 form {
   display: block;
   padding: 100px;
@@ -40,7 +48,7 @@ form {
   padding: 10px;
   background-color: #4fabed;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
+  gap: 5px;
   border-radius: 5px;
 }
 
@@ -52,8 +60,7 @@ form {
 }
 
 .player-form input, .player-form select {
-  padding: 8px;
-  
+  padding: 8px; 
 }
 
 img {
@@ -62,11 +69,12 @@ img {
   border-radius: 5px;
 }
 
-.player-card {
+.player-card, .player-details {
   display: block;
   border: 2px solid blue;
   background-color: khaki;
   border-radius: 5px;
+  max-width: 218px;
 }
 
 button {
