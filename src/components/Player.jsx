@@ -32,8 +32,8 @@ const API_URL = `https://fsa-puppy-bowl.herokuapp.com/api/${cohortName}/players`
   const handleDelete = async () => {
     try {
       await deletePlayer(player.id);
-      const updatedPlayers = await getPlayers();
-      setPlayers(updatedPlayers);
+      const players = await getPlayers();
+      setPlayers(players);
     } catch (err) {
       console.error("Error deleting player:", err);
     }
@@ -43,9 +43,9 @@ const API_URL = `https://fsa-puppy-bowl.herokuapp.com/api/${cohortName}/players`
     <div className="player-card">
       <h3>{player.name}</h3>
       <p>Breed: {player.breed}</p>
-      <img src={player.imageUrl} alt={player.name} />
+      <img src={player.imageUrl} alt={player.name}/>
       <div>
-        <Link to={`/players/${player.id}`}> Details </Link>
+      <Link to={`/players/${player.id}`}> <button>Details</button> </Link>
         <button onClick={handleDelete}> Delete </button>
       </div>
     </div>

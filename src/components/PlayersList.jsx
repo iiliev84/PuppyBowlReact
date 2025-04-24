@@ -7,7 +7,7 @@ const API_URL = `https://fsa-puppy-bowl.herokuapp.com/api/${cohortName}/players`
 
 function AllPlayers() {
   const [players, setPlayers] = useState([]);
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState();
 
   const getPlayers = async () => {
     try{
@@ -34,7 +34,7 @@ function AllPlayers() {
     : players;
 
   return (
-    <div className="players-container">
+    <div>
       <h1>Puppy Bowl Players</h1>
 
       <PlayerForm setPlayers={setPlayers} />

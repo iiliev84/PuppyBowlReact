@@ -60,24 +60,27 @@ function PlayerForm({ setPlayers }) {
       <h2>Add New Player</h2>
       <input
         type="text"
-        placeholder="Name"
+        placeholder="Enter Name"
         value={form.name}
         onChange={(e) => setForm({...form, name: e.target.value})}
         required
       />
+      <spacer></spacer>
       <input
         type="text"
-        placeholder="Breed"
+        placeholder="Enter Breed"
         value={form.breed}
         onChange={(e) => setForm({...form, breed: e.target.value})}
         required
       />
+      <spacer></spacer>
       <input
         type="url" 
         placeholder="Paste Image Link:"
         value={form.imageUrl}
         onChange={(e) => setForm({...form, imageUrl: e.target.value})}
       />
+      <spacer></spacer>
       <select
         value={form.status}
         onChange={(e) => setForm({...form, status: e.target.value})}
@@ -85,6 +88,7 @@ function PlayerForm({ setPlayers }) {
         <option value="bench">Bench</option>
         <option value="field">Field</option>
       </select>
+      <spacer></spacer>
       <button type="submit">Add Player</button>
     </form>
   );

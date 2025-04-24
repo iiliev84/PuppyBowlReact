@@ -34,9 +34,9 @@ function PlayerDetails() {
       <h2>{player.name}</h2>
       <p><strong>Breed:</strong> {player.breed}</p>
       <p><strong>Status:</strong> {player.status}</p>
-      <img src={player.imageUrl} alt={player.name} />
+      <img src={player.imageUrl} alt={player.name}/>
       <p><strong>Team:</strong>  {player.team ? player.team.name : "Unassigned"}</p>
-      <Link to="/"> Back to all players </Link>
+      <Link to="/"> <button>Back</button> </Link>
     </div>
   );
 }

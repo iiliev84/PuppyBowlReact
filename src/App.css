@@ -1,0 +1,82 @@
+*{
+  padding: 2px;
+  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: large;
+  text-align: center;
+}
+
+body {
+  background-color: #5c8dc5;
+}
+
+h1 {
+  color:#ffff66;
+  font-size: 3.5em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+form {
+  display: block;
+  padding: 100px;
+  background-color: #4fabed;
+}
+
+.search {
+  display: block;
+  background-color: #4fabed;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.search input {
+  padding: 10px;
+  width: 250px;
+}
+
+.players-list {
+  display: grid;
+  padding: 10px;
+  background-color: #4fabed;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.player-form {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+.player-form input, .player-form select {
+  padding: 8px;
+  
+}
+
+img {
+  max-width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.player-card {
+  display: block;
+  border: 2px solid blue;
+  background-color: khaki;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #5783db;
+  color: white;
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #9a2cf3;
+  color: white;
+}
